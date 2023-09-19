@@ -29,7 +29,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail
     # Fill in start
     mailFrom="MAIL FROM: <auriecat@gmail.com>\r\n"
     clientSocket.send(mailFrom.encode())
-    input=clientSocket.recv(1024).decode()
+    recv2=clientSocket.recv(1024).decode()
 
     # Fill in end
 
