@@ -1,7 +1,7 @@
 from socket import *
 
 
-def smtp_client(port=1025, mailserver='smtp.gmail.com'):
+def smtp_client(port=1025, mailserver='smtp.gmail.com'): #lord I didn't choose a mail server
     msg = "\r\n My message"
     endmsg = "\r\n.\r\n"
 
