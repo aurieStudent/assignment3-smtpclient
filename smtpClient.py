@@ -51,11 +51,11 @@ def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail
 
     # Send message data.
     # Fill in start
-    clientSocket.send(rcptTo) #test
+    #clientSocket.send(rcptTo) #test
     clientSocket.send(msg.encode())
     # Fill in end
 
-    # Message ends with a single period, send message end and handle server response.
+    # Message ends with a single period, send message end and handle server response. #end msg has the period
     # Fill in start
     clientSocket.send(endmsg.encode())
     input4=clientSocket.recv(1024).decode()
