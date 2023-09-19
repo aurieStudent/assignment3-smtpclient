@@ -2,7 +2,7 @@ from socket import *
 
 
 def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail server
-    msg = "\r\n My message"
+    msg = "\r\n My message\r\n"
     endmsg = "\r\n.\r\n"
 
     # Choose a mail server (e.g. Google mail server) if you want to verify the script beyond GradeScope
@@ -42,7 +42,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail
 
     # Send DATA command and handle server response.
     # Fill in start
-    dataCo= "DATA\r\n"
+    dataCo= "The Data\r\n"
     clientSocket.send(dataCo.encode())
     input3=clientSocket.recv(1024).decode()
 
