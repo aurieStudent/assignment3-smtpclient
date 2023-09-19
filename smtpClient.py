@@ -51,7 +51,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail
 
     # Send message data.
     # Fill in start
-    clientSocket.send("To:ac10984@nyu.edu") #test
+    clientSocket.send(rcptTo) #test
     clientSocket.send(msg.encode())
     # Fill in end
 
