@@ -1,6 +1,6 @@
 from socket import *
 
-mailserver = ('127.0.0.1', 1025) #lord I didn't choose a mail server
+mailserver = ('127.0.0.1', 1025) #nvm
 msg = "\r\n My message"
 endmsg = "\r\n.\r\n"
 
