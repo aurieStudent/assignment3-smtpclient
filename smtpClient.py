@@ -69,3 +69,6 @@ def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail
     recv6 = clientSocket.recv(1024)
     clientSocket.close() #whoops lol forgot to close the socket
     # Fill in end
+
+if __name__ == '__main__':
+    smtp_client(1025, '127.0.0.1')
