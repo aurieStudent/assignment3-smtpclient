@@ -1,7 +1,7 @@
 from socket import *
 
 
-def smtp_client(port=1025, mailserver='smtp.gmail.com'): #lord I didn't choose a mail server
+def smtp_client(port=1025, mailserver='127.0.0.1'): #lord I didn't choose a mail server
     msg = "\r\n My message"
     endmsg = "\r\n.\r\n"
 
@@ -27,7 +27,7 @@ def smtp_client(port=1025, mailserver='smtp.gmail.com'): #lord I didn't choose a
 
     # Send MAIL FROM command and handle server response.
     # Fill in start
-    mailFrom="MAIL FROM: auriecat@gmail.com\r\n"
+    mailFrom="MAIL FROM: <auriecat@gmail.com>\r\n"
     clientSocket.send(mailFrom.encode())
     input=clientSocket.recv(1024).decode()
 
@@ -35,7 +35,7 @@ def smtp_client(port=1025, mailserver='smtp.gmail.com'): #lord I didn't choose a
 
     # Send RCPT TO command and handle server response.
     # Fill in start
-    rcptTo=" RCPT TO: ac10984@nyu.edu\r\n"
+    rcptTo=" RCPT TO: <ac10984@nyu.edu>\r\n"
     clientSocket.send(rcptTo.encode())
     input2=clientSocket.recv(1024).decode()
     # Fill in end
