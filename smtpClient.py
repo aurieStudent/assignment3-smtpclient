@@ -1,5 +1,5 @@
 from socket import *
-
+ #This is Aurielle I am taking this course again and have approval to reuse this code.
 
 def smtp_client(port=1025, mailserver='127.0.0.1'):
     #mailserver = ('127.0.0.1', 1025) #lord I didn't choose a mail server
